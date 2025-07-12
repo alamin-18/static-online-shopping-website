@@ -10,3 +10,61 @@ body{
    height: 550px;
    margin: auto;
 }
+.container{
+    margin-top: 200px;
+}
+.circle-progress{
+    width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: conic-gradient(#0d6efd 75%, #e9ecef 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: #0d6efd;
+}
+.progress-circle {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #f1f1f1;
+      background-image: conic-gradient(var(--color) calc(var(--percent) * 1%), #eee 0%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #000;
+      position: relative;
+      margin: auto;
+    }
+
+    .progress-circle::before {
+      content: "";
+      width: 90px;
+      height: 90px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .progress-circle span {
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-box {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .feature-box h6 {
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    .feature-box p {
+      font-size: 14px;
+      color: #777;
+    }
